@@ -11,6 +11,8 @@
 
 ## This repo is for Vue 2
 
+Adrian was here! Im learning Git and this is my first attempt at cloning the Vue repo.
+
 You are looking at the repository for Vue 2. The repo for Vue 3 is [vuejs/core](https://github.com/vuejs/core).
 
 ## Sponsors
