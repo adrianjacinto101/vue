@@ -258,8 +258,13 @@ export function genFor(
   ) {
     state.warn(
       `<${el.tag} v-for="${alias} in ${exp}">: component lists rendered with ` +
+<<<<<<< HEAD:src/compiler/codegen/index.ts
         `v-for should have explicit keys. ` +
         `See https://v2.vuejs.org/v2/guide/list.html#key for more info.`,
+=======
+      `v-for should have explicit keys. ` +
+      `See https://v2.vuejs.org/v2/guide/list.html#Maintaining-State for more info.`,
+>>>>>>> 461403a14d7c96e7e95a6bd603d7a78ed88e82f0:src/compiler/codegen/index.js
       el.rawAttrsMap['v-for'],
       true /* tip */
     )

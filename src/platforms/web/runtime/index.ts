@@ -65,8 +65,13 @@ if (inBrowser) {
       // @ts-expect-error
       console[console.info ? 'info' : 'log'](
         `You are running Vue in development mode.\n` +
+<<<<<<< HEAD:src/platforms/web/runtime/index.ts
           `Make sure to turn on production mode when deploying for production.\n` +
           `See more tips at https://vuejs.org/guide/deployment.html`
+=======
+        `Make sure to turn on production mode when deploying for production.\n` +
+        `See more tips at https://v2.vuejs.org/v2/guide/deployment.html`
+>>>>>>> 461403a14d7c96e7e95a6bd603d7a78ed88e82f0:src/platforms/web/runtime/index.js
       )
     }
   }, 0)

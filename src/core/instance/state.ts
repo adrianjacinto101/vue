@@ -124,12 +124,20 @@ function initData(vm: Component) {
   data = vm._data = isFunction(data) ? getData(data, vm) : data || {}
   if (!isPlainObject(data)) {
     data = {}
+<<<<<<< HEAD:src/core/instance/state.ts
     __DEV__ &&
       warn(
         'data functions should return an object:\n' +
           'https://v2.vuejs.org/v2/guide/components.html#data-Must-Be-a-Function',
         vm
       )
+=======
+    process.env.NODE_ENV !== 'production' && warn(
+      'data functions should return an object:\n' +
+      'https://v2.vuejs.org/v2/guide/components.html#data-Must-Be-a-Function',
+      vm
+    )
+>>>>>>> 461403a14d7c96e7e95a6bd603d7a78ed88e82f0:src/core/instance/state.js
   }
   // proxy data on instance
   const keys = Object.keys(data)

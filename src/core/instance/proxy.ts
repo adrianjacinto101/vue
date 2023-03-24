@@ -16,10 +16,17 @@ if (__DEV__) {
   const warnNonPresent = (target, key) => {
     warn(
       `Property or method "${key}" is not defined on the instance but ` +
+<<<<<<< HEAD:src/core/instance/proxy.ts
         'referenced during render. Make sure that this property is reactive, ' +
         'either in the data option, or for class-based components, by ' +
         'initializing the property. ' +
         'See: https://v2.vuejs.org/v2/guide/reactivity.html#Declaring-Reactive-Properties.',
+=======
+      'referenced during render. Make sure that this property is reactive, ' +
+      'either in the data option, or for class-based components, by ' +
+      'initializing the property. ' +
+      'See: https://v2.vuejs.org/v2/guide/reactivity.html#Declaring-Reactive-Properties',
+>>>>>>> 461403a14d7c96e7e95a6bd603d7a78ed88e82f0:src/core/instance/proxy.js
       target
     )
   }
@@ -27,9 +34,15 @@ if (__DEV__) {
   const warnReservedPrefix = (target, key) => {
     warn(
       `Property "${key}" must be accessed with "$data.${key}" because ` +
+<<<<<<< HEAD:src/core/instance/proxy.ts
         'properties starting with "$" or "_" are not proxied in the Vue instance to ' +
         'prevent conflicts with Vue internals. ' +
         'See: https://v2.vuejs.org/v2/api/#data',
+=======
+      'properties starting with "$" or "_" are not proxied in the Vue instance to ' +
+      'prevent conflicts with Vue internals. ' +
+      'See: https://v2.vuejs.org/v2/api/#data',
+>>>>>>> 461403a14d7c96e7e95a6bd603d7a78ed88e82f0:src/core/instance/proxy.js
       target
     )
   }
